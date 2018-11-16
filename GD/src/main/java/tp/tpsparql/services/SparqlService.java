@@ -196,7 +196,7 @@ public class SparqlService {
                     "     ?point sao:time _:time." +
                     "       _:time tl:at ?time." +
                     "       FILTER (?lat = "+c.getCoordX()+" && ?lon = "+c.getCoordY()+")"+
-                    "} LIMIT 50";
+                    "} LIMIT 100";
 
             return this.spqr.executeQuery(query);
         } catch (UnsupportedEncodingException e){
