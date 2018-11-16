@@ -4,7 +4,7 @@ The purpose of this work is to provide some data visualization for IOT sensors d
 source : **http://iot.ee.surrey.ac.uk:8080/datasets.html**
 github page : **https://github.com/Vinspi/GD_UI**
 
-All the application is bundled in the jar, you can easily start it by typing "java -jar app.jar" or execute it with java if you are on a Windows system.
+All the application is bundled in the war, you can easily start it by typing "java -jar tpsparql-0.0.1-SNAPSHOT.war" or put it in your web server directory.
 
 Once launched, data are accessible through the UI at **http://localhost:8090**, you can click on a marker on the map to retrieve, parse and show data.
 
