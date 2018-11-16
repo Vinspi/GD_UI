@@ -10,7 +10,7 @@ Once launched, data are accessible through the UI at **http://localhost:8090**, 
 
 You can also choose a period then click the **update** button to see weather data (pressure, humidity, temperature and wind speed).
 
-**Warning :** you must wait for the data to be loaded on the server, otherwise the API endpoints will return an empty string. When data are loaded the app show the following message in the console : "App ready".
+**Warning :** you must wait for the data to be loaded on the server, otherwise the API endpoints will return an empty string. When data are loaded, the app show the following message in the console : "App ready".
 
 ## The API endpoints are :
 
