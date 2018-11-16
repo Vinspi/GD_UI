@@ -4,7 +4,6 @@ package tp.tpsparql.utils;
 import org.apache.jena.query.*;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.util.FileManager;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.ServletContext;
@@ -20,8 +19,8 @@ public class SparqlReader {
     public SparqlReader(String fileName) throws FileNotFoundException {
 
         this.model = ModelFactory.createDefaultModel();
-        InputStream is = FileManager.get().open(fileName);
-
+//        InputStream is = FileManager.get().open(fileName);
+        InputStream is = this.getClass().getResourceAsStream(fileName);
 
         if(is == null){
             throw new FileNotFoundException();

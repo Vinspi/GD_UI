@@ -28,11 +28,11 @@ public class SparqlService {
     @EventListener(ApplicationReadyEvent.class)
     public void init(){
         try {
-            this.spqr = new SparqlReader(sc.getRealPath("/WEB-INF/aarhus_parking.ttl"));
-            this.temperature = new SparqlReader(sc.getRealPath("/WEB-INF/temperature.ttl"));
-            this.humidity = new SparqlReader(sc.getRealPath("/WEB-INF/humidity.ttl"));
-            this.pressure = new SparqlReader(sc.getRealPath("/WEB-INF/pressure.ttl"));
-            this.windSpeed = new SparqlReader(sc.getRealPath("/WEB-INF/wind_speed.ttl"));
+            this.spqr = new SparqlReader("/aarhus_parking.ttl");
+            this.temperature = new SparqlReader("/temperature.ttl");
+            this.humidity = new SparqlReader("/humidity.ttl");
+            this.pressure = new SparqlReader("/pressure.ttl");
+            this.windSpeed = new SparqlReader("/wind_speed.ttl");
 
             System.out.println("App ready");
         }

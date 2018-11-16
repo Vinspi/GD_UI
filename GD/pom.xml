@@ -6,7 +6,7 @@
     <groupId>TP</groupId>
     <artifactId>tpsparql</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>tpsparql</name>
     <description>Demo project for Spring Boot</description>
@@ -91,6 +91,12 @@
                 </configuration>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <targetPath>webapp</targetPath>
+                <directory>src/main/webapp</directory>
+            </resource>
+        </resources>
     </build>
 
 

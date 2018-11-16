@@ -67,10 +67,6 @@ public class SparqlController {
         return ss.getWindSpeed(from, to);
     }
 
-//    @GetMapping("/test")
-//    @CrossOrigin
-//    public String getContextPatht(){
-//        return sc.getContextPath();
-//    }
+
 
 }
