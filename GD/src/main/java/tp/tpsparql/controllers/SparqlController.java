@@ -7,11 +7,15 @@ import tp.tpsparql.jsonRequests.DataRequest;
 import tp.tpsparql.services.SparqlService;
 import tp.tpsparql.utils.Coordinate;
 
+import javax.servlet.ServletContext;
+
 @RestController
 public class SparqlController {
 
     @Autowired
     SparqlService ss;
+
+
 
     @GetMapping("/points")
     @CrossOrigin
@@ -62,5 +66,11 @@ public class SparqlController {
 
         return ss.getWindSpeed(from, to);
     }
+
+//    @GetMapping("/test")
+//    @CrossOrigin
+//    public String getContextPatht(){
+//        return sc.getContextPath();
+//    }
 
 }
