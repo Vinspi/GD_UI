@@ -10,9 +10,9 @@ Once launched, data are accessible through the UI at **http://localhost:8090**, 
 
 You can also choose a period then click the **update** button to see weather data (pressure, humidity, temperature and wind speed).
 
-## The API hitpoints are :
+## The API endpoints are :
 
-| API hitpoint                    | Method | Request example                                            | Results                                                                                                                                  |
+| API endpoint                    | Method | Request example                                            | Results                                                                                                                                  |
 |---------------------------------|--------|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | http://localhost:8090/data      | POST   | {   limit: '100',   fields: ['lon','lat','name','value'] } | Query the data to retrieve the fields you ask for,  available fields are : 'lon', 'lat', 'name', 'value'.                                |
 | http://localhost:8090/points    | GET    |                             ...                            | Query the data to retrieve all distinct geographical points.                                                                             |
